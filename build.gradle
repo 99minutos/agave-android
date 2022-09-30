@@ -7,24 +7,37 @@ plugins {
 
 allprojects {
     group = "com.99minutos.libraries"
-    version = "0.1.1"
+    version = "0.1.2"
     repositories {
         google()
         mavenCentral()
     }
-
-
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+
+def githubProperties = new Properties()
+githubProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
 subprojects {
     apply plugin: "maven-publish"
     project.afterEvaluate {
         if (!plugins.hasPlugin("android")) {
             publishing {
+                repositories {
+                    maven {
+                        url = "https://maven.pkg.github.com/99minutos/agave-android"
+                        credentials {
+                            username = githubProperties.getProperty("gpr.user")
+                            password = githubProperties.getProperty("gpr.key")
+                        }
+                        println(url)
+                        println(credentials.username + ":" + credentials.password)
+                    }
+                }
                 publications {
                     maven(MavenPublication) {
                         afterEvaluate {
@@ -34,16 +47,12 @@ subprojects {
                             } else if (plugins.hasPlugin("android-library")) {
                                 from components.release
                             }
+                            println("----------")
+                            println(artifactId)
+                            println("----------")
+
                         }
-                        repositories {
-                            maven {
-                                url = "https://maven.pkg.github.com/99minutos/agave-android/"
-                                credentials {
-                                    username = '99minutos'
-                                    password = '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'
-                                }
-                            }
-                        }
+
                     }
                 }
             }
