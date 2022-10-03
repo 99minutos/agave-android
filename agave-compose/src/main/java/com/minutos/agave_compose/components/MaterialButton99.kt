@@ -9,7 +9,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.minutos.agave_compose.ui.theme.*
 
@@ -67,18 +66,3 @@ fun MaterialButton99(
 
 }
 
-@Preview
-@Composable
-fun MaterialButton99Preview() {
-    Column() {
-        MaterialButton99(type = TypeMaterialButton99.Primary, text = "Button 1") {
-
-        }
-        MaterialButton99(type = TypeMaterialButton99.Secondary, text = "Button 2") {
-
-        }
-        MaterialButton99(type = TypeMaterialButton99.Tertiary, text = "Button 3") {
-
-        }
-    }
-}
