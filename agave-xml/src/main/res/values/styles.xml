@@ -2,165 +2,70 @@
 <resources>
     <!--    Type scale text material-->
 
-    <!--    Primary-->
-    <style name="headline1Primary">
+    <style name="h1">
         <item name="android:textSize">@dimen/text_75</item>
         <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/primary500</item>
     </style>
 
-    <style name="headline2Primary">
+    <style name="h2">
         <item name="android:textSize">@dimen/text_60</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/primary500</item>
+        <item name="android:fontFamily">@font/barlow_light</item>
     </style>
 
-    <style name="headline3Primary">
+    <style name="h3">
         <item name="android:textSize">@dimen/text_45</item>
         <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/primary500</item>
     </style>
 
-    <style name="headline4Primary">
+    <style name="h4">
         <item name="android:textSize">@dimen/text_35</item>
         <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/primary500</item>
     </style>
 
-    <style name="headline5Primary">
+    <style name="h5">
         <item name="android:textSize">@dimen/text_24</item>
         <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/primary500</item>
     </style>
 
-    <style name="headline6Primary">
+    <style name="h6">
         <item name="android:textSize">@dimen/text_19</item>
         <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/primary500</item>
     </style>
 
-    <style name="subtitle1Primary">
+    <style name="subtitle1">
         <item name="android:textSize">@dimen/text_24</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/primary500</item>
+        <item name="android:fontFamily">@font/barlowmedium</item>
     </style>
 
-    <style name="subtitle2Primary">
+    <style name="subtitle2">
         <item name="android:textSize">@dimen/text_19</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/primary500</item>
+        <item name="android:fontFamily">@font/barlowsemibold</item>
     </style>
 
-    <style name="body1Primary">
+    <style name="body1">
         <item name="android:textSize">@dimen/text_17</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/primary500</item>
+        <item name="android:fontFamily">@font/barlowsemibold</item>
     </style>
 
-    <style name="body2Primary">
+    <style name="body2">
         <item name="android:textSize">@dimen/text_15</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/primary500</item>
+        <item name="android:fontFamily">@font/barlowsemibold</item>
     </style>
 
-    <style name="buttonPrimary">
+    <style name="button">
         <item name="android:textSize">@dimen/text_16</item>
         <item name="android:fontFamily">@font/barlowsemibold</item>
-        <item name="android:textColor">@color/primary500</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="captionPrimary">
+    <style name="caption">
         <item name="android:textSize">@dimen/text_12</item>
         <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/primary500</item>
     </style>
 
-    <style name="overlinePrimary">
+    <style name="overline">
         <item name="android:textSize">@dimen/text_16</item>
         <item name="android:fontFamily">@font/barlowsemibold</item>
-        <item name="android:textColor">@color/primary500</item>
-    </style>
-
-    <!--    Secondary-->
-
-    <style name="headline1Secondary">
-        <item name="android:textSize">@dimen/text_75</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="headline2Secondary">
-        <item name="android:textSize">@dimen/text_60</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="headline3Secondary">
-        <item name="android:textSize">@dimen/text_45</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="headline4Secondary">
-        <item name="android:textSize">@dimen/text_35</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="headline5Secondary">
-        <item name="android:textSize">@dimen/text_24</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="headline6Secondary">
-        <item name="android:textSize">@dimen/text_19</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="subtitle1Secondary">
-        <item name="android:textSize">@dimen/text_24</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="subtitle2Secondary">
-        <item name="android:textSize">@dimen/text_19</item>
-        <item name="android:fontFamily">@font/barlowbold</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="body1Secondary">
-        <item name="android:textSize">@dimen/text_17</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="body2Secondary">
-        <item name="android:textSize">@dimen/text_15</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="buttonSecondary">
-        <item name="android:textSize">@dimen/text_16</item>
-        <item name="android:fontFamily">@font/barlowsemibold</item>
-        <item name="android:textColor">@color/secondary500</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-
-    <style name="captionSecondary">
-        <item name="android:textSize">@dimen/text_12</item>
-        <item name="android:fontFamily">@font/barlowregular</item>
-        <item name="android:textColor">@color/secondary500</item>
-    </style>
-
-    <style name="overlineSecondary">
-        <item name="android:textSize">@dimen/text_16</item>
-        <item name="android:fontFamily">@font/barlowsemibold</item>
-        <item name="android:textColor">@color/secondary500</item>
     </style>
 
     <!--  ....End type scale text material-->

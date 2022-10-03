@@ -30,10 +30,12 @@ fun MaterialButton99(
             Button(
                 colors = ButtonDefaults.buttonColors(backgroundColor = Primary500),
                 contentPadding = PaddingValues(horizontal = 30.dp),
-                modifier = Modifier.padding(3.dp).height(47.dp),
+                modifier = Modifier
+                    .padding(3.dp)
+                    .height(47.dp),
                 shape = RoundedCornerShape(50.dp),
                 enabled = true,
-                onClick = { }) {
+                onClick = { onClick() }) {
                 Text(text = text, color = White, style = Typography.button)
             }
         }
@@ -41,12 +43,14 @@ fun MaterialButton99(
             OutlinedButton(
                 colors = ButtonDefaults.buttonColors(backgroundColor = White),
                 contentPadding = PaddingValues(horizontal = 30.dp),
-                border= BorderStroke(2.dp, Primary500),
+                border = BorderStroke(2.dp, Primary500),
                 enabled = true,
 
-                modifier = Modifier.padding(3.dp).height(47.dp),
+                modifier = Modifier
+                    .padding(3.dp)
+                    .height(47.dp),
                 shape = RoundedCornerShape(50.dp),
-                onClick = { }) {
+                onClick = { onClick() }) {
                 Text(text = text, style = Typography.button)
             }
         }
@@ -54,11 +58,13 @@ fun MaterialButton99(
             TextButton(
                 colors = ButtonDefaults.buttonColors(backgroundColor = Transparent),
                 contentPadding = PaddingValues(horizontal = 30.dp),
-                modifier = Modifier.padding(3.dp).height(47.dp),
+                modifier = Modifier
+                    .padding(3.dp)
+                    .height(47.dp),
                 shape = RoundedCornerShape(50.dp),
                 enabled = true,
 
-                onClick = { }) {
+                onClick = { onClick() }) {
                 Text(text = text, color = Primary500, style = Typography.button)
             }
         }

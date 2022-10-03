@@ -24,9 +24,15 @@ fun Chip99(
     Chip(
         colors = ChipDefaults.chipColors(color.copy(alpha = 0.25f)),
         shape = RoundedCornerShape(5.dp),
-        onClick = { }) {
+        onClick = { onClick() }) {
         Text(
-            text = text, style = TextStyle(color = color, fontFamily = fonts, fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+            text = text,
+            style = TextStyle(
+                color = color,
+                fontFamily = fonts,
+                fontWeight = FontWeight.SemiBold,
+                fontSize = 14.sp
+            )
         )
     }
 
