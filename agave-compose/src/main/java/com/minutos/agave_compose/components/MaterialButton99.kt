@@ -3,6 +3,9 @@ package com.minutos.agave_compose.components
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -18,8 +21,9 @@ sealed class TypeMaterialButton99 {
 
 @Composable
 fun MaterialButton99(
-    modifier: Modifier = Modifier,
+    text: String,
     type: TypeMaterialButton99,
+    enable: Boolean = true,
     onClick: () -> Unit = {}
 ) {
     when (type) {
@@ -27,8 +31,11 @@ fun MaterialButton99(
             Button(
                 colors = ButtonDefaults.buttonColors(backgroundColor = Primary500),
                 contentPadding = PaddingValues(horizontal = 30.dp),
+                modifier = Modifier.padding(3.dp).height(47.dp),
+                shape = RoundedCornerShape(50.dp),
+                enabled = true,
                 onClick = { }) {
-                Text(text = "Button2")
+                Text(text = text, color = White, style = Typography.button)
             }
         }
         TypeMaterialButton99.Secondary -> {
@@ -36,16 +43,24 @@ fun MaterialButton99(
                 colors = ButtonDefaults.buttonColors(backgroundColor = White),
                 contentPadding = PaddingValues(horizontal = 30.dp),
                 border= BorderStroke(2.dp, Primary500),
+                enabled = true,
+
+                modifier = Modifier.padding(3.dp).height(47.dp),
+                shape = RoundedCornerShape(50.dp),
                 onClick = { }) {
-                Text(text = "Button3")
+                Text(text = text, style = Typography.button)
             }
         }
         TypeMaterialButton99.Tertiary -> {
             TextButton(
                 colors = ButtonDefaults.buttonColors(backgroundColor = Transparent),
                 contentPadding = PaddingValues(horizontal = 30.dp),
+                modifier = Modifier.padding(3.dp).height(47.dp),
+                shape = RoundedCornerShape(50.dp),
+                enabled = true,
+
                 onClick = { }) {
-                Text(text = "Button4", color = Primary500)
+                Text(text = text, color = Primary500, style = Typography.button)
             }
         }
     }
@@ -56,13 +71,13 @@ fun MaterialButton99(
 @Composable
 fun MaterialButton99Preview() {
     Column() {
-        MaterialButton99(type = TypeMaterialButton99.Primary) {
+        MaterialButton99(type = TypeMaterialButton99.Primary, text = "Button 1") {
 
         }
-        MaterialButton99(type = TypeMaterialButton99.Secondary) {
+        MaterialButton99(type = TypeMaterialButton99.Secondary, text = "Button 2") {
 
         }
-        MaterialButton99(type = TypeMaterialButton99.Tertiary) {
+        MaterialButton99(type = TypeMaterialButton99.Tertiary, text = "Button 3") {
 
         }
     }
