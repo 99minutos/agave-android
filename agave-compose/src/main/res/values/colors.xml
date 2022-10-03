@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary25">#F9FCF5</color>
+    <color name="primary50">#F0F8E8</color>
+    <color name="primary100">#DAEDC6</color>
+    <color name="primary200">#C2E2A0</color>
+    <color name="primary300">#AAD679</color>
+    <color name="primary400">#97CD5D</color>
+    <color name="primary500">#85C440</color>
+    <color name="primary600">#7DBE3A</color>
+    <color name="primary700">#72B632</color>
+    <color name="primary800">#68AF2A</color>
+    <color name="primary900">#55A21C</color>
+
+    <color name="secondary50">#e3e7e9</color>
+    <color name="secondary100">#b8c2c9</color>
+    <color name="secondary200">#899aa5</color>
+    <color name="secondary300">#597180</color>
+    <color name="secondary400">#365265</color>
+    <color name="secondary500">#12344a</color>
+    <color name="secondary600">#102f43</color>
+    <color name="secondary700">#0d273a</color>
+    <color name="secondary800">#0a2132</color>
+    <color name="secondary900">#051522</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="dark">#262927</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#6ace3b</color>
+    <color name="limon">#3fc468</color>
+    <color name="menta">#20c9a7</color>
+    <color name="light">#f5f5f5</color>
+    <color name="sky">#add8e5</color>
+    <color name="melon">#fbc30e</color>
+    <color name="sandia">#fb728c</color>
+    <color name="uva">#867af9</color>
+    <color name="lime">#abdb40</color>
+    <color name="dalia">#3c645e</color>
+    <color name="error">#e83154</color>
+    <color name="alarm">#ffe41a</color>
+</resources>
