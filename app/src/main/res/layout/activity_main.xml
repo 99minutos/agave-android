@@ -11,17 +11,251 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.minutos.agave_xml.components.Chip99
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorChip="@color/primary500"
+            app:textChip="Creado" />
+
+        <com.minutos.agave_xml.components.Chip99
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorChip="@color/alarm"
+            app:textChip="Recolectado" />
+
+
+        <com.minutos.agave_xml.components.Chip99
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorChip="@color/uva"
+            app:textChip="En camino" />
+
+        <com.minutos.agave_xml.components.Chip99
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorChip="@color/sandia"
+            app:textChip="Cancelado" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.minutos.agave_xml.components.MaterialButton99
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp"
+            app:text="Primary Button"
+            app:type="primary"/>
+
+        <com.minutos.agave_xml.components.MaterialButton99
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="30dp"
+            app:text="Secondary Button"
+            app:type="secondary"/>
+
+        <com.minutos.agave_xml.components.MaterialButton99
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp"
+            app:text="Tertiary Button"
+            app:type="tertiary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h1"
+            android:textColor="@color/primary500"
+            android:text="Headline 1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h2"
+            android:textColor="@color/secondary500"
+            android:text="Headline2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h3"
+            android:textColor="@color/primary500"
+            android:text="Headline 3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h4"
+            android:textColor="@color/primary500"
+            android:text="Headline 4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h5"
+            android:textColor="@color/primary500"
+            android:text="Headline 5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h6"
+            android:textColor="@color/primary500"
+            android:text="Headline 6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/subtitle1"
+            android:textColor="@color/primary500"
+            android:text="Subtitle 1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/subtitle2"
+            android:textColor="@color/primary500"
+            android:text="Subtitle 2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/body1"
+            android:textColor="@color/primary500"
+            android:text="Body 1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/body2"
+            android:visibility="gone"
+            android:textColor="@color/primary500"
+            android:text="Body 2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/button"
+            android:textColor="@color/primary500"
+            android:text="Button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/caption"
+            android:textColor="@color/primary500"
+            android:text="Caption"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/overline"
+            android:textColor="@color/primary500"
+            android:text="Overline"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h4"
+            android:textColor="@color/primary500"
+            android:text="Color primario"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h4"
+            android:textColor="@color/secondary500"
+            android:text="Color secundario"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h4"
+            android:textColor="@color/menta"
+            android:text="Color menta"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h4"
+            android:textColor="@color/dalia"
+            android:text="Color dalia"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h4"
+            android:textColor="@color/error"
+            android:text="Color error"/>
+
+    </LinearLayout>
+
     <androidx.compose.ui.platform.ComposeView
         android:id="@+id/buttonCompose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

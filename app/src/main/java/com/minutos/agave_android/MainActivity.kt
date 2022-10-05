@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.ui.platform.ComposeView
 import com.minutos.agave_compose.components.Chip99
+import com.minutos.agave_compose.components.MaterialButton99
+import com.minutos.agave_compose.components.TypeMaterialButton99
 import com.minutos.agave_compose.ui.theme.Primary500
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         
         val buttonCompose = findViewById<ComposeView>(R.id.buttonCompose)
         buttonCompose.setContent { 
-            Chip99(color = Primary500, text = "Cancelada") {}
+            MaterialButton99(text = "Primary button", type = TypeMaterialButton99.Primary) {}
         }
 
     }
