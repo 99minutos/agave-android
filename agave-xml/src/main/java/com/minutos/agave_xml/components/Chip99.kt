@@ -34,4 +34,18 @@ class Chip99 @JvmOverloads constructor(
 
         res.recycle()
     }
+
+    fun setOnClickListener(onClick:()-> Unit) {
+        chipMaterial.setOnClickListener {
+            onClick()
+        }
+    }
+
+    fun setColorChip(color: Int) {
+        val colorDefaultChip = ContextCompat.getColor(context, color)
+        chipMaterial.chipBackgroundColor = ColorStateList.valueOf(colorDefaultChip).withAlpha(25)
+        chipMaterial.setTextColor(colorDefaultChip)
+        chipMaterial.typeface = ResourcesCompat.getFont(context, R.font.barlowsemibold)
+        chipMaterial.rippleColor = ColorStateList.valueOf(colorDefaultChip).withAlpha(50)
+    }
 }

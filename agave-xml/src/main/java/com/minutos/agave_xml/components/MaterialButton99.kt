@@ -85,4 +85,14 @@ class MaterialButton99 @JvmOverloads constructor(
         }
         res.recycle()
     }
+
+    fun setOnClickListener(onClick:()-> Unit) {
+        buttonMaterial.setOnClickListener {
+            onClick()
+        }
+    }
+
+    fun isEnabled(enable: Boolean) {
+        buttonMaterial.isEnabled = enable
+    }
 }
