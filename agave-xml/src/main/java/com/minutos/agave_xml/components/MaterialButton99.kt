@@ -92,6 +92,10 @@ class MaterialButton99 @JvmOverloads constructor(
         }
     }
 
+    fun setText(text: String) {
+        buttonMaterial.text = text
+    }
+
     fun isEnabled(enable: Boolean) {
         buttonMaterial.isEnabled = enable
     }

@@ -41,6 +41,10 @@ class Chip99 @JvmOverloads constructor(
         }
     }
 
+    fun setText(text: String) {
+        chipMaterial.text = text
+    }
+
     fun setColorChip(color: Int) {
         val colorDefaultChip = ContextCompat.getColor(context, color)
         chipMaterial.chipBackgroundColor = ColorStateList.valueOf(colorDefaultChip).withAlpha(25)
